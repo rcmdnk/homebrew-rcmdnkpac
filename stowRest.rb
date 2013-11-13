@@ -1,10 +1,10 @@
 require 'formula'
 
-STAW_RESET_VERSION = '0.0.1'
+STOW_RESEET_VERSION = '0.0.1'
 class StowRest < Formula
   homepage 'https://github.com/rcmdnk/stowRest/'
-  url 'https://github.com/rcmdnk/stowRest.git', :tag => "v#{STAW_RESET_VERSION}"
-  version STAW_RESET_VERSION
+  url 'https://github.com/rcmdnk/stowRest.git', :tag => "v#{STOW_RESEET_VERSION}"
+  version STOW_RESEET_VERSION
   head 'https://github.com/rcmdnk/stowRest.git', :branch => 'master'
 
   skip_clean 'bin'

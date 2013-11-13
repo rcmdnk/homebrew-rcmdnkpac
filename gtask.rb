@@ -1,7 +1,7 @@
 require 'formula'
 
 GTASK_VERSION = '0.0.1'
-class Trash < Formula
+class Gtask < Formula
   homepage 'https://github.com/rcmdnk/gtask/'
   url 'https://github.com/rcmdnk/gtask.git', :tag => "v#{GTASK_VERSION}"
   version GTASK_VERSION
