@@ -1,16 +1,16 @@
 require 'formula'
 
-STOW_RESEET_VERSION = '0.0.1'
+STOW_RESET_VERSION = '0.0.1'
 class StowReset < Formula
-  homepage 'https://github.com/rcmdnk/stowReset/'
-  url 'https://github.com/rcmdnk/stowReset.git', :tag => "v#{STOW_RESEET_VERSION}"
-  version STOW_RESEET_VERSION
-  head 'https://github.com/rcmdnk/stowReset.git', :branch => 'master'
+  homepage 'https://github.com/rcmdnk/stow_reset/'
+  url 'https://github.com/rcmdnk/stow_reset.git', :tag => "v#{STOW_RESET_VERSION}"
+  version STOW_RESET_VERSION
+  head 'https://github.com/rcmdnk/stow_reset.git', :branch => 'master'
 
   skip_clean 'bin'
 
   def install
     prefix.install 'bin'
-    (bin+'stowReset').chmod 0755
+    (bin+'stow_reset').chmod 0755
   end
 end
