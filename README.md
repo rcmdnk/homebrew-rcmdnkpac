@@ -12,3 +12,7 @@ Following Formulae are included:
 * [multi_clipboards](https://github.com/rcmdnk/multi_clipboards)
 * [rcmdnk-trash](https://github.com/rcmdnk/trash)
 * [stow_reset](https://github.com/rcmdnk/stow_reset)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/homebrew-rcmdnkpac/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
