@@ -9,7 +9,7 @@ Following Formulae are included:
 * [evernote_mail](https://github.com/rcmdnk/evernote_mail)
 * [gtask](https://github.com/rcmdnk/gtask)
 * [trash](https://github.com/rcmdnk/trash)
-* [multi_clipboards](https://github.com/rcmdnk/multi_clipboards)
+* [multi_clipboard](https://github.com/rcmdnk/multi_clipboard)
 * [rcmdnk-trash](https://github.com/rcmdnk/trash)
 * [stow_reset](https://github.com/rcmdnk/stow_reset)
 
