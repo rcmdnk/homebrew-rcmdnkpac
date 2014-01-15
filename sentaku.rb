@@ -10,7 +10,7 @@ class Sentaku < Formula
   skip_clean 'bin'
 
   def install
-    prefix.install 'bin/sentaku'
+    prefix.install 'bin'
     (bin+'sentaku').chmod 0755
   end
 end
