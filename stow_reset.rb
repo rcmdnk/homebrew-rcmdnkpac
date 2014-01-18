@@ -1,6 +1,6 @@
 require 'formula'
 
-STOW_RESET_VERSION = '0.0.1'
+STOW_RESET_VERSION = '0.0.2'
 class StowReset < Formula
   homepage 'https://github.com/rcmdnk/stow_reset/'
   url 'https://github.com/rcmdnk/stow_reset.git', :tag => "v#{STOW_RESET_VERSION}"

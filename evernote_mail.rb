@@ -1,6 +1,6 @@
 require 'formula'
 
-EVERNOTE_MAIL_VERSION = '0.0.1'
+EVERNOTE_MAIL_VERSION = '0.0.2'
 class EvernoteMail < Formula
   homepage 'https://github.com/rcmdnk/evernote_mail/'
   url 'https://github.com/rcmdnk/evernote_mail.git', :tag => "v#{EVERNOTE_MAIL_VERSION}"
