@@ -6,7 +6,7 @@ class SdCl < Formula
   url 'https://github.com/rcmdnk/sd_cl.git', :tag => "v#{SD_CL_VERSION}"
   version SD_CL_VERSION
   head 'https://github.com/rcmdnk/sd_cl.git', :branch => 'master'
-  depends_on 'rcmdnk/sentaku'
+  depends_on 'sentaku'
 
   def install
     prefix.install 'etc'
