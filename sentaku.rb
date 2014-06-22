@@ -1,6 +1,6 @@
 require 'formula'
 
-SENTAKU_VERSION = '0.0.9'
+SENTAKU_VERSION = '0.0.10'
 class Sentaku < Formula
   homepage 'https://github.com/rcmdnk/sentaku/'
   url 'https://github.com/rcmdnk/sentaku.git', :tag => "v#{SENTAKU_VERSION}"
