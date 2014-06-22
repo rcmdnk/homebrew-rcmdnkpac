@@ -1,6 +1,6 @@
 require 'formula'
 
-SD_CL_VERSION = '0.0.5'
+SD_CL_VERSION = '0.1.1'
 class SdCl < Formula
   homepage 'https://github.com/rcmdnk/sd_cl/'
   url 'https://github.com/rcmdnk/sd_cl.git', :tag => "v#{SD_CL_VERSION}"
