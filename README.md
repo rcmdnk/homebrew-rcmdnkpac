@@ -8,10 +8,12 @@ Following Formulae are included:
 * [escape_sequence](https://github.com/rcmdnk/escape_sequence)
 * [evernote_mail](https://github.com/rcmdnk/evernote_mail)
 * [gtask](https://github.com/rcmdnk/gtask)
-* [trash](https://github.com/rcmdnk/trash)
 * [multi_clipboard](https://github.com/rcmdnk/multi_clipboard)
-* [rcmdnk-trash](https://github.com/rcmdnk/trash)
+* [rcmdnk-trash](https://github.com/rcmdnk/trash): Brew name with **rcmdnk**, to avoid conflict with other `trash` in homebrew.
+* [screenutf8](http://www.gnu.org/software/screen): Additional option for patches on utf8
 * [stow_reset](https://github.com/rcmdnk/stow_reset)
+* [sentaku](https://github.com/rcmdnk/sentaku)
+* [sd_cl](https://github.com/rcmdnk/sd_cl)
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/homebrew-rcmdnkpac/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
