@@ -6,9 +6,9 @@ class Asciinema < Formula
   url "https://github.com/sickill/asciinema/archive/v#{ASCIINEMA_VERSION}.tar.gz"
   sha1 "d7d660f80e04754073262d955cb9ce9d8e850326"
 
-  depends_on :python => "2.7"
+  depends_on :python
 
   def install
-    system "make", "install", "PREFIX=#{prefix}"
+  system "python", "setup.py", "install"
   end
 end
