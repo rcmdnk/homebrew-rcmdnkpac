@@ -14,7 +14,3 @@ Following Formulae are included:
 * [stow_reset](https://github.com/rcmdnk/stow_reset)
 * [sentaku](https://github.com/rcmdnk/sentaku)
 * [sd_cl](https://github.com/rcmdnk/sd_cl)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/homebrew-rcmdnkpac/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
