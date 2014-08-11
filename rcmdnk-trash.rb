@@ -7,6 +7,8 @@ class RcmdnkTrash < Formula
   version RCMDNK_TRASH_VERSION
   head 'https://github.com/rcmdnk/trash.git', :branch => 'master'
 
+  depends_on 'sentaku'
+
   skip_clean 'bin'
 
   def install
