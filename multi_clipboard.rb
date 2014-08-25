@@ -7,7 +7,7 @@ class MultiClipboard < Formula
   version MULTI_CLIPBOARD_VERSION
   head 'https://github.com/rcmdnk/multi_clipboard.git', :branch => 'master'
 
-  depends_on :sentaku
+  depends_on ':sentaku'
 
   skip_clean 'bin'
 
