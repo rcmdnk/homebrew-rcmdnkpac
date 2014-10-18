@@ -3,6 +3,11 @@ homebrew-rcmdnkpac
 
 Repository for Homebrew Tap, including Formulae of rcmdnk's packages.
 
+Usage:
+
+    $ brew tap rcmdnk/rcmdnkpac
+    $ brew install sentaku # etc...
+
 Following Formulae are included:
 
 * [escape_sequence](https://github.com/rcmdnk/escape_sequence)
