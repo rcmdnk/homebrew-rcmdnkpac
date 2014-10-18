@@ -3,6 +3,7 @@ install:
   - brew update && brew upgrade >& /dev/null
 script:
   - brew tap rcmdnk/rcmdnkpac
+  - brew install python
   - brew install asciinema
   - brew install escape_sequence
   - brew install evernote_mail
