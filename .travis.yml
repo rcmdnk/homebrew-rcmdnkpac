@@ -1,0 +1,15 @@
+language: objective-c
+install:
+  - brew update && brew upgrade >& /dev/null
+script:
+  - brew tap rcmdnk/rcmdnkpack
+  - brew install asciinema
+  - brew install escape_sequence
+  - brew install evernote_mail
+  - brew install gtask
+  - brew install multi_clipboard
+  - brew install rcmdnk-trash
+  - brew install screenutf8
+  - brew install sd_cl
+  - brew install sentaku
+  - brew install stow_reset
