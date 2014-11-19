@@ -9,6 +9,7 @@ class Linkchecker < Formula
   depends_on :python
 
   def install
+  system "python", "setup.py", "build"
   system "python", "setup.py", "install"
   end
 end
