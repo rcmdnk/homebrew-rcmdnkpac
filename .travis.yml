@@ -2,12 +2,13 @@ language: objective-c
 install:
   - brew update && brew upgrade >& /dev/null
 script:
+#  - brew install python
   - brew tap rcmdnk/rcmdnkpac
-  - brew install python
   - brew install asciinema
   - brew install escape_sequence
   - brew install evernote_mail
   - brew install gtask
+  - brew install linkchecker
   - brew install multi_clipboard
   - brew install rcmdnk-trash
   - brew install screenutf8
