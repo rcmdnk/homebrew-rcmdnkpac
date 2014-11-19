@@ -13,6 +13,7 @@ Following Formulae are included:
 * [escape_sequence](https://github.com/rcmdnk/escape_sequence)
 * [evernote_mail](https://github.com/rcmdnk/evernote_mail)
 * [gtask](https://github.com/rcmdnk/gtask)
+* [linkchecker](http://wummel.github.io/linkchecker/index.html)
 * [multi_clipboard](https://github.com/rcmdnk/multi_clipboard)
 * [rcmdnk-trash](https://github.com/rcmdnk/trash): Brew name with **rcmdnk**, to avoid conflict with other `trash` in homebrew.
 * [screenutf8](http://www.gnu.org/software/screen): Additional option for patches on utf8
