@@ -1,8 +1,9 @@
 language: objective-c
 install:
   - brew update && brew upgrade >& /dev/null
+  - pip install -q Django
+  - python setup.py -q install
 script:
-#  - brew install python
   - brew tap rcmdnk/rcmdnkpac
   - brew install asciinema
   - brew install escape_sequence
@@ -15,3 +16,4 @@ script:
   - brew install sd_cl
   - brew install sentaku
   - brew install stow_reset
+  - brew install python
