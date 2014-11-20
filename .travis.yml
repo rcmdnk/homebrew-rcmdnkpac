@@ -1,4 +1,8 @@
 language: objective-c
+before_install:
+  - export HOMEBREW_DEBUG_PREFIX=~/local
+  - mkdir -p $HOMEBREW_DEBUG_PREFIX
+  - brew --prefix
 install:
   - brew update && brew upgrade >& /dev/null
   - pip install -q Django
