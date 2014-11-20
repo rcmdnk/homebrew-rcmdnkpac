@@ -1,23 +1,16 @@
 language: objective-c
-before_install:
-  - export HOMEBREW_DEBUG_PREFIX=~/local
-  - mkdir -p $HOMEBREW_DEBUG_PREFIX
-  - brew --prefix
 install:
   #  - brew update && brew upgrade >& /dev/null
 script:
-  - pip install -q Django
-  - python setup.py -q install
   - brew tap rcmdnk/rcmdnkpac
-  - brew install asciinema
+#  - brew install asciinema
   - brew install escape_sequence
   - brew install evernote_mail
   - brew install gtask
-  - brew install linkchecker
+#  - brew install linkchecker
   - brew install multi_clipboard
   - brew install rcmdnk-trash
   - brew install screenutf8
   - brew install sd_cl
   - brew install sentaku
   - brew install stow_reset
-  - brew install python
