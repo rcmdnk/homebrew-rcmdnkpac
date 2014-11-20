@@ -4,10 +4,10 @@ before_install:
   - mkdir -p $HOMEBREW_DEBUG_PREFIX
   - brew --prefix
 install:
-  - brew update && brew upgrade >& /dev/null
+  #  - brew update && brew upgrade >& /dev/null
+script:
   - pip install -q Django
   - python setup.py -q install
-script:
   - brew tap rcmdnk/rcmdnkpac
   - brew install asciinema
   - brew install escape_sequence
