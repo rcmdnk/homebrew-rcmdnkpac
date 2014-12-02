@@ -1,6 +1,6 @@
 require 'formula'
 
-ESCAPE_SEQUENCE_VERSION = '0.0.2'
+ESCAPE_SEQUENCE_VERSION = '0.0.3'
 class EscapeSequence < Formula
   homepage 'https://github.com/rcmdnk/escape_sequence/'
   url 'https://github.com/rcmdnk/escape_sequence.git', :tag => "v#{ESCAPE_SEQUENCE_VERSION}"

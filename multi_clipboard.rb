@@ -1,6 +1,6 @@
 require 'formula'
 
-MULTI_CLIPBOARD_VERSION = '0.0.7'
+MULTI_CLIPBOARD_VERSION = '0.0.8'
 class MultiClipboard < Formula
   homepage 'https://github.com/rcmdnk/multi_clipboard/'
   url 'https://github.com/rcmdnk/multi_clipboard.git', :tag => "v#{MULTI_CLIPBOARD_VERSION}"
