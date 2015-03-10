@@ -22,7 +22,8 @@ class Screenutf8 < Formula
         sha1 "75522565629e49ce42e9a332795241491a270bad"
       end
       patch :p2 do
-        url "http://zuse.jp/misc/screen-utf8-osc.diff"
+        #url "http://zuse.jp/misc/screen-utf8-osc.diff"
+        url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
         sha1 "7fa23604bd748dbbdf9eda2ecfe80b0ce9334868"
       end
     end
@@ -45,7 +46,8 @@ class Screenutf8 < Formula
         sha1 "75522565629e49ce42e9a332795241491a270bad"
       end
       patch :p1 do
-        url "http://zuse.jp/misc/screen-utf8-osc.diff"
+        #url "http://zuse.jp/misc/screen-utf8-osc.diff"
+        url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
         sha1 "7fa23604bd748dbbdf9eda2ecfe80b0ce9334868"
       end
     end
