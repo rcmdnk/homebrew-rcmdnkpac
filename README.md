@@ -20,3 +20,4 @@ Following Formulae are included:
 * [stow_reset](https://github.com/rcmdnk/stow_reset)
 * [sentaku](https://github.com/rcmdnk/sentaku)
 * [sd_cl](https://github.com/rcmdnk/sd_cl)
+* [parse-plist](https://github.com/rcmdnk/parse-plist)
