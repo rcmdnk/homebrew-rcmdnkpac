@@ -3,15 +3,14 @@ install:
   #  - brew update && brew upgrade >& /dev/null
 script:
   - brew tap rcmdnk/rcmdnkpac
-#  - brew install asciinema
   - brew install escape_sequence
   - brew install evernote_mail
   - brew install gtask
-#  - brew install linkchecker
+  - brew install linkchecker
   - brew install multi_clipboard
+  - brew install parse-plist
   - brew install rcmdnk-trash
   - brew install screenutf8
   - brew install sd_cl
   - brew install sentaku
   - brew install stow_reset
-  - brew install parse-plist
