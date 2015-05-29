@@ -6,7 +6,8 @@ class Linkchecker < Formula
   depends_on :python
 
   def install
-  system "python", "setup.py", "build"
-  system "python", "setup.py", "install", "--prefix=#{prefix}"
+    ENV["PYTHONPATH"] = lib+"python2.7/site-packages"
+    ENV.prepend_create_path 'PYTHONPATH', lib+'python2.7/site-packages'
+    system "python", "setup.py", "install", "--prefix=#{prefix}"
   end
 end
