@@ -7,6 +7,8 @@ script:
   - brew install evernote_mail
   - brew install gtask
   - brew install linkchecker
+  - which linkchecker
+  - ls -l $(which linkchecker)
   - brew install multi_clipboard
   - brew install parse-plist
   - brew install rcmdnk-trash
