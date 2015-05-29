@@ -1,11 +1,9 @@
-require "formula"
-
 class Screenutf8 < Formula
-  homepage "http://www.gnu.org/software/screen"
+  homepage "https://www.gnu.org/software/screen"
 
   stable do
     url "http://ftpmirror.gnu.org/screen/screen-4.2.1.tar.gz"
-    mirror "http://ftp.gnu.org/gnu/screen/screen-4.2.1.tar.gz"
+    mirror "https://ftp.gnu.org/gnu/screen/screen-4.2.1.tar.gz"
     sha1 "21eadf5f1d64120649f3390346253c6bc8a5103c"
 
     # This patch is to disable the error message

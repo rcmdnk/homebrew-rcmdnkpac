@@ -1,18 +1,15 @@
-require 'formula'
-
-RCMDNK_TRASH_VERSION = '0.1.5'
 class RcmdnkTrash < Formula
-  homepage 'https://github.com/rcmdnk/trash/'
-  url 'https://github.com/rcmdnk/trash.git', :tag => "v#{RCMDNK_TRASH_VERSION}"
-  version RCMDNK_TRASH_VERSION
-  head 'https://github.com/rcmdnk/trash.git', :branch => 'master'
+  homepage "https://github.com/rcmdnk/trash/"
+  url "https://github.com/rcmdnk/trash.git", :tag => "v0.1.5",
+    :revision => "f52f689f33afcc7b50feae5de3483d8e99ac3443"
+  head "https://github.com/rcmdnk/trash.git", :branch => "master"
 
-  depends_on 'sentaku'
+  depends_on "sentaku"
 
-  skip_clean 'bin'
+  skip_clean "bin"
 
   def install
-    prefix.install 'bin'
-    (bin+'trash').chmod 0755
+    prefix.install "bin"
+    (bin+"trash").chmod 0755
   end
 end

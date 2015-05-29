@@ -1,18 +1,15 @@
-require 'formula'
-
-MULTI_CLIPBOARD_VERSION = '0.0.8'
 class MultiClipboard < Formula
-  homepage 'https://github.com/rcmdnk/multi_clipboard/'
-  url 'https://github.com/rcmdnk/multi_clipboard.git', :tag => "v#{MULTI_CLIPBOARD_VERSION}"
-  version MULTI_CLIPBOARD_VERSION
-  head 'https://github.com/rcmdnk/multi_clipboard.git', :branch => 'master'
+  homepage "https://github.com/rcmdnk/multi_clipboard/"
+  url "https://github.com/rcmdnk/multi_clipboard.git", :tag => "v0.0.8",
+    :revision => "9423b44be6541bf9ecbcc90a589dc214e9ac1624"
+  head "https://github.com/rcmdnk/multi_clipboard.git", :branch => "master"
 
-  depends_on 'sentaku'
+  depends_on "sentaku"
 
-  skip_clean 'bin'
+  skip_clean "bin"
 
   def install
-    prefix.install 'bin'
-    (bin+'multi_clipboard').chmod 0755
+    prefix.install "bin"
+    (bin+"multi_clipboard").chmod 0755
   end
 end
