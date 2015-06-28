@@ -12,7 +12,8 @@ script:
   - brew install multi_clipboard
   - brew install parse-plist
   - brew install rcmdnk-trash
-  - brew install screenutf8 --HEAD --utf8
+    #- brew install screenutf8 --HEAD --utf8
+  - brew install screenutf8 --utf8
   - brew install sd_cl
   - brew install sentaku
   - brew install stow_reset
