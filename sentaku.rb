@@ -1,8 +1,7 @@
-SENTAKU_VERSION = '0.3.0'
 class Sentaku < Formula
   homepage "https://github.com/rcmdnk/sentaku/"
-  url "https://github.com/rcmdnk/sentaku.git", :tag => "v0.3.0",
-    :revision => "6ea11a5bf3e12238fb5fa9ad0cc0bf60afabfe65"
+  url "https://github.com/rcmdnk/sentaku.git", :tag => "v0.3.1",
+    :revision => "c05b6ab618ed9309c6f392baa466e971bf231802"
   head "https://github.com/rcmdnk/sentaku.git", :branch => "master"
 
   skip_clean "bin"
