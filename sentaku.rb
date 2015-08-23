@@ -1,10 +1,10 @@
 class Sentaku < Formula
+  desc "Utility to make sentaku (selection) window with shell command."
   homepage "https://github.com/rcmdnk/sentaku/"
-  url "https://github.com/rcmdnk/sentaku.git", :tag => "v0.3.1",
-    :revision => "c05b6ab618ed9309c6f392baa466e971bf231802"
-  head "https://github.com/rcmdnk/sentaku.git", :branch => "master"
+  url "https://github.com/rcmdnk/sentaku/archive/v0.3.2.tar.gz"
+  sha256 "a90c6475a12b1aaf204a5ced01f11d2129c5230750b2d1226b826c3089c24656"
 
-  skip_clean "bin"
+  head "https://github.com/rcmdnk/sentaku.git"
 
   def install
     prefix.install "bin"
