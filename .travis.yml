@@ -1,6 +1,7 @@
 language: objective-c
 install:
   #  - brew update && brew upgrade >& /dev/null
+  - brew update
 script:
   - brew tap rcmdnk/rcmdnkpac
   - brew install escape_sequence
