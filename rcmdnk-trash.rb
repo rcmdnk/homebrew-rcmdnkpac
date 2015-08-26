@@ -1,12 +1,10 @@
 class RcmdnkTrash < Formula
   homepage "https://github.com/rcmdnk/trash/"
-  url "https://github.com/rcmdnk/trash.git", :tag => "v0.1.5",
-    :revision => "f52f689f33afcc7b50feae5de3483d8e99ac3443"
-  head "https://github.com/rcmdnk/trash.git", :branch => "master"
+  url "https://github.com/rcmdnk/trash/archive/v0.1.6.tar.gz"
+  sha256 "ab45a57db94e386f505438f233eaf21f243644b7e03c87b8345561e878326250"
+  head "https://github.com/rcmdnk/trash.git"
 
   depends_on "sentaku"
-
-  skip_clean "bin"
 
   def install
     prefix.install "bin"
