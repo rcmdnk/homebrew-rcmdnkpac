@@ -1,13 +1,12 @@
 class Gtask < Formula
   homepage "https://github.com/rcmdnk/gtask/"
-  url "https://github.com/rcmdnk/gtask.git", :tag => "v0.0.1",
-    :revision => "8a790cb7f8ca4d26056dfc5755e61e7d6749b9dc"
-  head "https://github.com/rcmdnk/gtask.git", :branch => "master"
+  url "https://github.com/rcmdnk/homebrew-file/archive/v0.0.2.tar.gz"
+  sha256 "e923eca26ab6fa5ca9d0700f25146e725c51a3d75e1a676c2be43b3a3bc9546c"
 
-  skip_clean "bin"
+  head "https://github.com/rcmdnk/gtask.git"
 
   def install
-    prefix.install "bin"
+    bin.install "bin/gtask"
     (bin+"gtask").chmod 0755
   end
 end
