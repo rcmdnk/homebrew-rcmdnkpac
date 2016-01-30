@@ -4,25 +4,25 @@ class Screenutf8 < Formula
   stable do
     url "http://ftpmirror.gnu.org/screen/screen-4.3.1.tar.gz"
     mirror "https://ftp.gnu.org/gnu/screen/screen-4.3.1.tar.gz"
-    sha1 "a524761504e28480517e338b20c852f2ab100c93"
+    sha256 "fa4049f8aee283de62e283d427f2cfd35d6c369b40f7f45f947dbfd915699d63"
 
     # This patch is to disable the error message
     # "/var/run/utmp: No such file or directory" on launch
     patch :p2 do
       url "https://gist.githubusercontent.com/yujinakayama/4608863/raw/75669072f227b82777df25f99ffd9657bd113847/gistfile1.diff"
-      sha1 "93d611f1f46c7bbca5f9575304913bd1c38e183b"
+      sha256 "9c53320cbe3a24c8fb5d77cf701c47918b3fabe8d6f339a00cfdb59e11af0ad5"
     end
 
     # These patches are to fix character corruptions on UTF-8
     if build.include? "utf8"
       patch :p2 do
         url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        sha1 "75522565629e49ce42e9a332795241491a270bad"
+        sha256 "9722c5e8dc3a5ba1802e8b289d3fae0e2ecbf04b18d0e0193a52b4992caf8cf3"
       end
       patch :p2 do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
         url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
-        sha1 "7fa23604bd748dbbdf9eda2ecfe80b0ce9334868"
+        sha256 "e6e692b1961d07c44b3fd78f0b3d0bf95d528613ee70adc27e55b2ff147cb83d"
       end
     end
   end
@@ -34,19 +34,19 @@ class Screenutf8 < Formula
     # "/var/run/utmp: No such file or directory" on launch
     patch do
       url "https://gist.githubusercontent.com/yujinakayama/4608863/raw/75669072f227b82777df25f99ffd9657bd113847/gistfile1.diff"
-      sha1 "93d611f1f46c7bbca5f9575304913bd1c38e183b"
+      sha256 "9c53320cbe3a24c8fb5d77cf701c47918b3fabe8d6f339a00cfdb59e11af0ad5"
     end
 
     # These patches are to fix character corruptions on UTF-8
     if build.include? "utf8"
       patch do
         url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        sha1 "75522565629e49ce42e9a332795241491a270bad"
+        sha256 "9722c5e8dc3a5ba1802e8b289d3fae0e2ecbf04b18d0e0193a52b4992caf8cf3"
       end
       patch do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
         url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
-        sha1 "7fa23604bd748dbbdf9eda2ecfe80b0ce9334868"
+        sha256 "e6e692b1961d07c44b3fd78f0b3d0bf95d528613ee70adc27e55b2ff147cb83d"
       end
     end
   end

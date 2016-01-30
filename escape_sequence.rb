@@ -1,14 +1,13 @@
 class EscapeSequence < Formula
+  desc "Scripts for checking escape sequences."
   homepage "https://github.com/rcmdnk/escape_sequence/"
-  url "https://github.com/rcmdnk/escape_sequence.git", :tag => "v0.0.3",
-    :revision => "b3631cc71e1eb5ae1975216be5b241d60037c735"
-  head "https://github.com/rcmdnk/escape_sequence.git", :branch => "master"
+  url "https://github.com/rcmdnk/escape_sequence/archive/v0.0.3.tar.gz"
+  sha256 "d9f2701fce2c287d1dfa3a8280418232d6159dc2b685224597bbd24ddcc206f1"
 
-  skip_clean "bin"
+  head "https://github.com/rcmdnk/escape_sequence.git"
 
   def install
-    prefix.install "bin"
-    (bin+"colcheck").chmod 0755
-    (bin+"escseqcheck").chmod 0755
+    bin.install "bin/colcheck"
+    bin.install "bin/escseqcheck"
   end
 end

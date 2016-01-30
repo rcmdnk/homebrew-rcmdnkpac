@@ -1,12 +1,14 @@
 class SdCl < Formula
-  homepage 'https://github.com/rcmdnk/sd_cl/'
-  url 'https://github.com/rcmdnk/sd_cl.git', :tag => "v0.2.1",
-    :revision => "da1cd90811a18e5c23d967babd72cc966431c4cb"
-  head 'https://github.com/rcmdnk/sd_cl.git', :branch => 'master'
+  desc "Useful functions to change directories for Bash/Zsh and GNU screen/tmux."
+  homepage "https://github.com/rcmdnk/sd_cl/"
+  url "https://github.com/rcmdnk/sd_cl/archive/v0.2.2.tar.gz"
+  sha256 "0a594fcc66c24f816687114a20bb12aecf502a604727c961e44fe3576e68270e"
 
-  depends_on 'sentaku'
+  head "https://github.com/rcmdnk/sd_cl.git"
+
+  depends_on "sentaku"
 
   def install
-    prefix.install 'etc'
+    (prefix/"etc").install "etc/sd_cl"
   end
 end

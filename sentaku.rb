@@ -7,7 +7,7 @@ class Sentaku < Formula
   head "https://github.com/rcmdnk/sentaku.git"
 
   def install
-    prefix.install "bin"
-    (bin+"sentaku").chmod 0755
+    bin.install "bin/sentaku"
+    bin.install "bin/ddv"
   end
 end

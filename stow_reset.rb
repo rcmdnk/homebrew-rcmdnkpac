@@ -1,13 +1,12 @@
 class StowReset < Formula
+  desc "Command to reset stow directory, especially for the case in which the package installs symbolic links."
   homepage "https://github.com/rcmdnk/stow_reset/"
-  url "https://github.com/rcmdnk/stow_reset.git", :tag => "v0.0.3",
-    :revision => "cc62ba13c52b0fe7a2126e98b0d3eb7476d4b876"
-  head "https://github.com/rcmdnk/stow_reset.git", :branch => "master"
+  url "https://github.com/rcmdnk/stow_reset/archive/v0.0.3.tar.gz"
+  sha256 "362c7dfd766593d69625dcfea90709def0ce7792a18095391b7560dc8c755b2b"
 
-  skip_clean "bin"
+  head "https://github.com/rcmdnk/stow_reset.git"
 
   def install
-    prefix.install "bin"
-    (bin+"stow_reset").chmod 0755
+    bin.install "stow_reset"
   end
 end
