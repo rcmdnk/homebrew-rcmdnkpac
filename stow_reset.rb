@@ -7,6 +7,6 @@ class StowReset < Formula
   head "https://github.com/rcmdnk/stow_reset.git"
 
   def install
-    bin.install "stow_reset"
+    bin.install "bin/stow_reset"
   end
 end
