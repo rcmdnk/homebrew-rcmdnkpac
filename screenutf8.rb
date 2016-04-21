@@ -17,8 +17,8 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch :p2 do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/430304d064b84fd2a05eff82da126782dcad9460/screen-utf8-nfd.patch"
-        sha256 "99197eb8e9f91549895bd557eafdf7dee49e34a93bc3f12f5be14bb9115f8996"
+        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/be75f51d16e5a24bcee9d357f785e95b008814df/screen-utf8-nfd.patch"
+        sha256 "ce62334111561c5b45a48fd0caddf1aaafe7ccdd4dd94223288bf3d53e72fbe7"
       end
       patch :p2 do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
@@ -42,8 +42,8 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/430304d064b84fd2a05eff82da126782dcad9460/screen-utf8-nfd.patch"
-        sha256 "99197eb8e9f91549895bd557eafdf7dee49e34a93bc3f12f5be14bb9115f8996"
+        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/be75f51d16e5a24bcee9d357f785e95b008814df/screen-utf8-nfd.patch"
+        sha256 "ce62334111561c5b45a48fd0caddf1aaafe7ccdd4dd94223288bf3d53e72fbe7"
       end
       patch do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
