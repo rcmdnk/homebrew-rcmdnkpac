@@ -1,8 +1,8 @@
 class Sentaku < Formula
   desc "Utility to make sentaku (selection) window with shell command."
   homepage "https://github.com/rcmdnk/sentaku/"
-  url "https://github.com/rcmdnk/sentaku/archive/v0.5.2.tar.gz"
-  sha256 "c8521c7e45147a738b179e6013f3dae7894c5662924c00633595ed4973c2f204"
+  url "https://github.com/rcmdnk/sentaku/archive/v0.5.3.tar.gz"
+  sha256 "3d6ecf440cec74c5ba6b2c0b430b61e3d95060c46542a119f96013baaac6ea71"
 
   head "https://github.com/rcmdnk/sentaku.git"
 
