@@ -1,4 +1,4 @@
-class Explorer < Formula
+class ShellExplorer < Formula
   desc "File explorer with preview, made with shell script."
   homepage "https://github.com/rcmdnk/shell-explorer/"
   url "https://github.com/rcmdnk/shell-explorer/archive/v0.0.2.tar.gz"
