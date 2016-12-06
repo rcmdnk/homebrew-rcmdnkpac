@@ -2,7 +2,7 @@ class ShellExplorer < Formula
   desc "File explorer with preview, made with shell script."
   homepage "https://github.com/rcmdnk/shell-explorer/"
   url "https://github.com/rcmdnk/shell-explorer/archive/v0.0.2.tar.gz"
-  sha256 "092c4cea2924fbf8f74478d55fda41b2e596e38644e2367103e8c8421c9808c8"
+  sha256 "38f8138c540526e67d556e5061767605877255cfaeb4a3b14d1fd9b213acb116"
 
   head "https://github.com/rcmdnk/shell-explorer.git"
 
