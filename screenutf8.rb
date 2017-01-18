@@ -2,9 +2,9 @@ class Screenutf8 < Formula
   homepage "https://www.gnu.org/software/screen"
 
   stable do
-    url "http://ftpmirror.gnu.org/screen/screen-4.4.0.tar.gz"
-    mirror "https://ftp.gnu.org/gnu/screen/screen-4.4.0.tar.gz"
-    sha256 "ef722a54759a3bf23aad272bbf33c414c1078cad6bcd982fada93c0d7917218b"
+    url "http://ftpmirror.gnu.org/screen/screen-4.5.0.tar.gz"
+    mirror "https://ftp.gnu.org/gnu/screen/screen-4.5.0.tar.gz"
+    sha256 "01c3a7c362185f35d6a95dff52d64337076496acd034d717de3c263500cfefb0"
 
     # This patch is to disable the error message
     # "/var/run/utmp: No such file or directory" on launch
@@ -22,8 +22,8 @@ class Screenutf8 < Formula
       end
       patch :p2 do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
-        sha256 "e6e692b1961d07c44b3fd78f0b3d0bf95d528613ee70adc27e55b2ff147cb83d"
+        url "https://gist.githubusercontent.com/rcmdnk/1bbd244db301d9628816aad5fedd35a5/raw/71b09a37dff88c74098e4ebf584b06c889d7a3fb/screen-utf8-osc.diff"
+        sha256 "91ca39e8dd2e2168f468eb4ccb63d47ea1d8df9dc9be9de0d655a65881ab1744"
       end
     end
   end
@@ -47,8 +47,8 @@ class Screenutf8 < Formula
       end
       patch do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/143cb56d31335dbccf70/raw/4b3e175946f2366b4076088c1c8f2bbe65b32e16/screen-utf8-osc.diff"
-        sha256 "e6e692b1961d07c44b3fd78f0b3d0bf95d528613ee70adc27e55b2ff147cb83d"
+        url "https://gist.githubusercontent.com/rcmdnk/1bbd244db301d9628816aad5fedd35a5/raw/71b09a37dff88c74098e4ebf584b06c889d7a3fb/screen-utf8-osc.diff"
+        sha256 "91ca39e8dd2e2168f468eb4ccb63d47ea1d8df9dc9be9de0d655a65881ab1744"
       end
     end
   end
