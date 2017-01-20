@@ -17,13 +17,13 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch :p2 do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/be75f51d16e5a24bcee9d357f785e95b008814df/screen-utf8-nfd.patch"
-        sha256 "ce62334111561c5b45a48fd0caddf1aaafe7ccdd4dd94223288bf3d53e72fbe7"
+        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/69a2e25dc11d3d7a942b8143ed30e26d833255e6/screen-utf8-nfd.patch"
+        sha256 "52b7d99252df4aae5fc1b0342d72d9e8df7e583c4c7f8be9bb87f41d267acbf2"
       end
       patch :p2 do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/1bbd244db301d9628816aad5fedd35a5/raw/71b09a37dff88c74098e4ebf584b06c889d7a3fb/screen-utf8-osc.diff"
-        sha256 "91ca39e8dd2e2168f468eb4ccb63d47ea1d8df9dc9be9de0d655a65881ab1744"
+        url "https://gist.githubusercontent.com/rcmdnk/7d504f2f9064162fac529ad0ddb87202/raw/ce910700dfec637f0e3b501c4a7d8b14260a4ef4/screen-utf8-osc.diff"
+        sha256 "cf910964bb3dac524f36745bc54944f62971a245aed970d4806d6a42dbf15d76"
       end
     end
   end
@@ -42,13 +42,13 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/5e72a6fd14bf106f9d410ea68adf0644/raw/be75f51d16e5a24bcee9d357f785e95b008814df/screen-utf8-nfd.patch"
-        sha256 "ce62334111561c5b45a48fd0caddf1aaafe7ccdd4dd94223288bf3d53e72fbe7"
+        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/69a2e25dc11d3d7a942b8143ed30e26d833255e6/screen-utf8-nfd.patch"
+        sha256 "52b7d99252df4aae5fc1b0342d72d9e8df7e583c4c7f8be9bb87f41d267acbf2"
       end
       patch do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/1bbd244db301d9628816aad5fedd35a5/raw/71b09a37dff88c74098e4ebf584b06c889d7a3fb/screen-utf8-osc.diff"
-        sha256 "91ca39e8dd2e2168f468eb4ccb63d47ea1d8df9dc9be9de0d655a65881ab1744"
+        url "https://gist.githubusercontent.com/rcmdnk/7d504f2f9064162fac529ad0ddb87202/raw/ce910700dfec637f0e3b501c4a7d8b14260a4ef4/screen-utf8-osc.diff"
+        sha256 "cf910964bb3dac524f36745bc54944f62971a245aed970d4806d6a42dbf15d76"
       end
     end
   end
