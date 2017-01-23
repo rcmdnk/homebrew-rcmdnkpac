@@ -18,3 +18,4 @@ script:
   - brew install sd_cl
   - brew install sentaku
   - brew install stow_reset
+  - brew install shell-logger
