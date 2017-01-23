@@ -1,8 +1,8 @@
 class ShellLogger < Formula
   desc "Logger for shell script."
   homepage "https://github.com/rcmdnk/shell-logger/"
-  url "https://github.com/rcmdnk/shell-logger/archive/v0.0.1.tar.gz"
-  sha256 "4c406abaf32578fa434a6f8fa0456f0ea57fd1f4860fff4c503085c6f9f1e49d"
+  url "https://github.com/rcmdnk/shell-logger/archive/v0.0.2.tar.gz"
+  sha256 "fdc0c322f575468629537d5b571a807eda0acfd6cefd540e1e68b531a4bf390a"
 
   head "https://github.com/rcmdnk/shell-logger.git"
 
