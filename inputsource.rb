@@ -5,5 +5,6 @@ class Inputsource < Formula
 
   def install
     bin.install "inputsource"
+    chmod 0755, "#{bin}/inputsource"
   end
 end
