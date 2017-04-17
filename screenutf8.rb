@@ -2,9 +2,9 @@ class Screenutf8 < Formula
   homepage "https://www.gnu.org/software/screen"
 
   stable do
-    url "http://ftpmirror.gnu.org/screen/screen-4.5.0.tar.gz"
-    mirror "https://ftp.gnu.org/gnu/screen/screen-4.5.0.tar.gz"
-    sha256 "01c3a7c362185f35d6a95dff52d64337076496acd034d717de3c263500cfefb0"
+    url "https://ftpmirror.gnu.org/screen/screen-4.5.1.tar.gz"
+    mirror "https://ftp.gnu.org/gnu/screen/screen-4.5.1.tar.gz"
+    sha256 "97db2114dd963b016cd4ded34831955dcbe3251e5eee45ac2606e67e9f097b2d"
 
     # This patch is to disable the error message
     # "/var/run/utmp: No such file or directory" on launch
@@ -17,13 +17,13 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch :p2 do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/69a2e25dc11d3d7a942b8143ed30e26d833255e6/screen-utf8-nfd.patch"
-        sha256 "52b7d99252df4aae5fc1b0342d72d9e8df7e583c4c7f8be9bb87f41d267acbf2"
+        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/26d43f3581a77d42027238a4f65130d4753944dc/screen-utf8-nfd.patch"
+        sha256 "77b85f3f9d715566879bb0062cf919e0701f141b2d184b7d3ecfcf6767a4411e"
       end
       patch :p2 do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/7d504f2f9064162fac529ad0ddb87202/raw/ce910700dfec637f0e3b501c4a7d8b14260a4ef4/screen-utf8-osc.diff"
-        sha256 "cf910964bb3dac524f36745bc54944f62971a245aed970d4806d6a42dbf15d76"
+        url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/b3104ce355ed5ef17df77caa2af7d99c86a56457/screen-utf8-osc.diff"
+        sha256 "f3ecd4597b19e548e4c220fc356ab19165950c3ac3a9b8994df68b07741b3980"
       end
     end
   end
@@ -42,13 +42,13 @@ class Screenutf8 < Formula
     if build.include? "utf8"
       patch do
         #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/69a2e25dc11d3d7a942b8143ed30e26d833255e6/screen-utf8-nfd.patch"
-        sha256 "52b7d99252df4aae5fc1b0342d72d9e8df7e583c4c7f8be9bb87f41d267acbf2"
+        url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/26d43f3581a77d42027238a4f65130d4753944dc/screen-utf8-nfd.patch"
+        sha256 "77b85f3f9d715566879bb0062cf919e0701f141b2d184b7d3ecfcf6767a4411e"
       end
       patch do
         #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-        url "https://gist.githubusercontent.com/rcmdnk/7d504f2f9064162fac529ad0ddb87202/raw/ce910700dfec637f0e3b501c4a7d8b14260a4ef4/screen-utf8-osc.diff"
-        sha256 "cf910964bb3dac524f36745bc54944f62971a245aed970d4806d6a42dbf15d76"
+        url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/b3104ce355ed5ef17df77caa2af7d99c86a56457/screen-utf8-osc.diff"
+        sha256 "f3ecd4597b19e548e4c220fc356ab19165950c3ac3a9b8994df68b07741b3980"
       end
     end
   end
