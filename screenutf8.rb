@@ -52,7 +52,7 @@ class Screenutf8 < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
 
-  option "utf8", "Apply patches for utf8 (default, for backward compatibility)"
+  option "utf8", "Apply patches for utf8 (default, remained as option for backward compatibility)"
 
   def install
     if build.head?
