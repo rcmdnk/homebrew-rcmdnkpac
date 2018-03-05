@@ -1,8 +1,8 @@
 class RcmdnkSshrc < Formula
   desc "Bring your .bashrc, .vimrc, etc. with you when you SSH"
   homepage "https://github.com/rcmdnk/sshrc"
-  url "https://github.com/rcmdnk/sshrc/archive/0.6.2.tar.gz"
-  sha256 "0df93b717295eb2e28697b540712f72fb49b75d156fcaa7ebda7037da6d59af8"
+  url "https://github.com/rcmdnk/sshrc/archive/0.6.3.tar.gz"
+  sha256 "2e4457b530b813f93b4ae0349b4b6b21d5bc6973900b6953fd12d9777501ff99"
 
   head "https://github.com/rcmdnk/sshrc.git"
 
