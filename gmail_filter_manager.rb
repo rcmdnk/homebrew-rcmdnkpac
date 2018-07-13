@@ -1,8 +1,8 @@
 class GmailFilterManager < Formula
   desc "Gmail filer manager using YAML format."
   homepage "https://github.com/rcmdnk/gmail_filter_manager/"
-  url "https://github.com/rcmdnk/gmail_filter_manager/archive/v0.0.1.tar.gz"
-  sha256 "e8b940ac6596b393d7c2c899828219ffd1f010d0ae128ec0449fe908e5a8c7f9"
+  url "https://github.com/rcmdnk/gmail_filter_manager/archive/v0.0.2.tar.gz"
+  sha256 "842ad09001c750e298dc61be0f3d1c4faad594a3f8ee8dd46b28fba140c75f2c"
 
   head "https://github.com/rcmdnk/gmail_filter_manager"
 
