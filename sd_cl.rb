@@ -1,8 +1,8 @@
 class SdCl < Formula
   desc "Useful functions to change directories for Bash/Zsh and GNU screen/tmux."
   homepage "https://github.com/rcmdnk/sd_cl/"
-  url "https://github.com/rcmdnk/sd_cl/archive/v1.0.1.tar.gz"
-  sha256 "1d25819cfc150a07f792c036a03aeccf4b826e44b58ef4bd1f1b8ffc8f117989"
+  url "https://github.com/rcmdnk/sd_cl/archive/v1.1.0.tar.gz"
+  sha256 "8330e7647d56e2184300fdcaba6ce57b00995cc6092642c23f6ea161722535bc"
 
   head "https://github.com/rcmdnk/sd_cl.git"
 
