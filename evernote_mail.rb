@@ -1,8 +1,8 @@
 class EvernoteMail < Formula
   desc "Script to send files/comments to Evernote by a mail."
   homepage "https://github.com/rcmdnk/evernote_mail/"
-  url "https://github.com/rcmdnk/evernote_mail/archive/v0.0.5.tar.gz"
-  sha256 "4b35bc553995bdd6af7f975b735dd9bf18267ed45126a7842300f8c21d6836dd"
+  url "https://github.com/rcmdnk/evernote_mail/archive/v0.0.6.tar.gz"
+  sha256 "82311afcab3c19c8761d1213a5e11a6b83a1d70ecb98e135096bf4f01d5054c0"
 
   head "https://github.com/rcmdnk/evernote_mail.git"
 

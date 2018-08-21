@@ -1,8 +1,8 @@
 class RcmdnkTrash < Formula
   desc "Remove Command using a trash box."
   homepage "https://github.com/rcmdnk/trash/"
-  url "https://github.com/rcmdnk/trash/archive/v0.2.1.tar.gz"
-  sha256 "307f0a6f480d301f899d9ded85646ffdd92f1c829c179be029d8fe91f8083922"
+  url "https://github.com/rcmdnk/trash/archive/v0.2.2.tar.gz"
+  sha256 "2cd4cc90667627b26c714decb89913df1bc2f1e118105bb3baa5f6d7b28826ac"
 
   head "https://github.com/rcmdnk/trash.git"
 
