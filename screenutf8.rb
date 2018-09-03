@@ -29,13 +29,6 @@ class Screenutf8 < Formula
   head do
     url "git://git.savannah.gnu.org/screen.git"
 
-    # This patch is to disable the error message
-    # "/var/run/utmp: No such file or directory" on launch
-    patch do
-      url "https://gist.githubusercontent.com/yujinakayama/4608863/raw/75669072f227b82777df25f99ffd9657bd113847/gistfile1.diff"
-      sha256 "9c53320cbe3a24c8fb5d77cf701c47918b3fabe8d6f339a00cfdb59e11af0ad5"
-    end
-
     # These patches are to fix character corruptions on UTF-8
     patch do
       #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
