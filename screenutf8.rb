@@ -29,11 +29,11 @@ class Screenutf8 < Formula
   head do
     url "git://git.savannah.gnu.org/screen.git"
 
-    # This patch is to disable the error message
-    # "/var/run/utmp: No such file or directory" on launch
+    # This patch avoid a bug that prevents detached sessions to reattach
+    # See https://lists.gnu.org/archive/html/screen-users/2016-10/msg00007.html
     patch do
-      url "https://gist.githubusercontent.com/yujinakayama/4608863/raw/75669072f227b82777df25f99ffd9657bd113847/gistfile1.diff"
-      sha256 "9c53320cbe3a24c8fb5d77cf701c47918b3fabe8d6f339a00cfdb59e11af0ad5"
+      url "https://gist.githubusercontent.com/sobrinho/5a7672e088868c2d036957dbe7825dd0/raw/c6fe5dc20cb7dbd0e23f9053aa3867fcbc01d983/diff.patch"
+      sha256 "47892633ccb137316a0532b034d0be81edc26fc72a6babca9761a1649bc67fd1"
     end
 
     # These patches are to fix character corruptions on UTF-8
