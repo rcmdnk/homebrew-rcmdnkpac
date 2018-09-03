@@ -29,13 +29,6 @@ class Screenutf8 < Formula
   head do
     url "git://git.savannah.gnu.org/screen.git"
 
-    # This patch avoid a bug that prevents detached sessions to reattach
-    # See https://lists.gnu.org/archive/html/screen-users/2016-10/msg00007.html
-    patch do
-      url "https://gist.githubusercontent.com/sobrinho/5a7672e088868c2d036957dbe7825dd0/raw/c6fe5dc20cb7dbd0e23f9053aa3867fcbc01d983/diff.patch"
-      sha256 "47892633ccb137316a0532b034d0be81edc26fc72a6babca9761a1649bc67fd1"
-    end
-
     # These patches are to fix character corruptions on UTF-8
     patch do
       #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
