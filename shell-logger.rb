@@ -7,6 +7,6 @@ class ShellLogger < Formula
   head "https://github.com/rcmdnk/shell-logger.git"
 
   def install
-    (prefix/"etc").install "etc/shell-logger.sh"
+    (prefix/"etc").install "etc/shell-logger"
   end
 end
