@@ -48,6 +48,8 @@ class Screenutf8 < Formula
   option "utf8", "Apply patches for utf8 (default, remained as option for backward compatibility)"
 
   def install
+
+    opoo "This is screenutf8 to install GNU screen 4.6.2, with patches for problems of character corruptions. There is a new release 4.7.0 and later. To install newer version, use 'screen' instead of 'screenutf8'. If you find any problems of character corruptions with newer screen, ask rcmdnk@gmail.com"
     if build.head?
       cd "src"
     end
