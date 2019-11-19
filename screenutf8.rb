@@ -21,8 +21,8 @@ class Screenutf8 < Formula
     end
     patch :p2 do
       #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-      url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/16c81629ab2f83ec9e99241a34f9e8b28b773c61/screen-utf8-nfd.patch"
-      sha256 "d0c03d35fadeb872891b5b387b219f865dd01bde777f29eed7f5f6f2313e1d45"
+      url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/859b14c0ba82e855394dd2ec3df64be79ab452fc/screen-utf8-osc.diff"
+      sha256 "e0d75f895b34e2c5107ef1758c738a06273328be4b68e6ea80cff3083ee8659a"
     end
   end
 
