@@ -16,13 +16,13 @@ class Screenutf8 < Formula
     # These patches are to fix character corruptions on UTF-8
     patch :p2 do
       #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-      url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/26d43f3581a77d42027238a4f65130d4753944dc/screen-utf8-nfd.patch"
-      sha256 "77b85f3f9d715566879bb0062cf919e0701f141b2d184b7d3ecfcf6767a4411e"
+      url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/16c81629ab2f83ec9e99241a34f9e8b28b773c61/screen-utf8-nfd.patch"
+      sha256 "d0c03d35fadeb872891b5b387b219f865dd01bde777f29eed7f5f6f2313e1d45"
     end
     patch :p2 do
       #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-      url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/75825a6d3a385f02bc1c1353752f2d1ea9a91b16/screen-utf8-osc.diff"
-      sha256 "f2d0925df132e56984055d13a8ba62ee2fe7d61097eab1131d0091f555b70ca5"
+      url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/16c81629ab2f83ec9e99241a34f9e8b28b773c61/screen-utf8-nfd.patch"
+      sha256 "d0c03d35fadeb872891b5b387b219f865dd01bde777f29eed7f5f6f2313e1d45"
     end
   end
 
