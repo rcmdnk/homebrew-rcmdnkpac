@@ -2,9 +2,9 @@ class Screenutf8 < Formula
   homepage "https://www.gnu.org/software/screen"
 
   stable do
-    url "https://ftp.gnu.org/gnu/screen/screen-4.6.2.tar.gz"
-    mirror "https://ftpmirror.gnu.org/screen/screen-4.6.2.tar.gz"
-    sha256 "1b6922520e6a0ce5e28768d620b0f640a6631397f95ccb043b70b91bb503fa3a"
+    url "https://ftp.gnu.org/gnu/screen/screen-4.7.0.tar.gz"
+    mirror "https://ftpmirror.gnu.org/screen/screen-4.7.0.tar.gz"
+    sha256 "da775328fa783bd2a787d722014dbd99c6093effc11f337827604c2efc5d20c1"
 
     # This patch is to disable the error message
     # "/var/run/utmp: No such file or directory" on launch
@@ -21,25 +21,13 @@ class Screenutf8 < Formula
     end
     patch :p2 do
       #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-      url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/b3104ce355ed5ef17df77caa2af7d99c86a56457/screen-utf8-osc.diff"
-      sha256 "f3ecd4597b19e548e4c220fc356ab19165950c3ac3a9b8994df68b07741b3980"
+      url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/75825a6d3a385f02bc1c1353752f2d1ea9a91b16/screen-utf8-osc.diff"
+      sha256 "f2d0925df132e56984055d13a8ba62ee2fe7d61097eab1131d0091f555b70ca5"
     end
   end
 
   head do
     url "git://git.savannah.gnu.org/screen.git"
-
-    ## These patches are to fix character corruptions on UTF-8
-    #patch do
-    #  #url "https://gist.github.com/raw/626040/be6a04f0e64c56185ba5850415ac59dad4cd62a0/screen-utf8-nfd.patch"
-    #  url "https://gist.githubusercontent.com/rcmdnk/b0bf57d422c875fb70645556d7770091/raw/26d43f3581a77d42027238a4f65130d4753944dc/screen-utf8-nfd.patch"
-    #  sha256 "77b85f3f9d715566879bb0062cf919e0701f141b2d184b7d3ecfcf6767a4411e"
-    #end
-    #patch do
-    #  #url "http://zuse.jp/misc/screen-utf8-osc.diff"
-    #  url "https://gist.githubusercontent.com/rcmdnk/8a90eba829fd789a4e058492b494f862/raw/b3104ce355ed5ef17df77caa2af7d99c86a56457/screen-utf8-osc.diff"
-    #  sha256 "f3ecd4597b19e548e4c220fc356ab19165950c3ac3a9b8994df68b07741b3980"
-    #end
   end
 
   depends_on "autoconf" => :build
@@ -49,7 +37,6 @@ class Screenutf8 < Formula
 
   def install
 
-    opoo "This is screenutf8 to install GNU screen 4.6.2, with patches for problems of character corruptions. There is a new release 4.7.0 and later. To install newer version, use 'screen' instead of 'screenutf8'. If you find any problems of character corruptions with newer screen, ask rcmdnk@gmail.com"
     if build.head?
       cd "src"
     end
