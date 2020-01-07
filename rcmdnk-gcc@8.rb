@@ -1,6 +1,6 @@
 require "os/linux/glibc"
 
-class GccAT8 < Formula
+class RcmdnkGccAT8 < Formula
   desc "GNU compiler collection"
   homepage "https://gcc.gnu.org/"
   url "https://ftp.gnu.org/gnu/gcc/gcc-8.3.0/gcc-8.3.0.tar.xz"
