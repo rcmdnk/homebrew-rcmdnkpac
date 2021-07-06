@@ -33,6 +33,8 @@ class Screenutf8 < Formula
   depends_on "autoconf" => :build
   depends_on "automake" => :build
 
+  uses_from_macos "ncurses"
+
   option "utf8", "Apply patches for utf8 (default, remained as option for backward compatibility)"
 
   def install
@@ -46,6 +48,11 @@ class Screenutf8 < Formula
     # before osdef.sh script generates it.
     ENV.deparallelize
 
+    # Fix for Xcode 12 build errors.
+    # https://savannah.gnu.org/bugs/index.php?59465
+    ENV.append "CFLAGS", "-Wno-implicit-function-declaration"
+
+    system "autoreconf --install"
     system "./autogen.sh"
     system "./configure", "--prefix=#{prefix}",
                           "--mandir=#{man}",
