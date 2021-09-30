@@ -53,6 +53,7 @@ class Screenutf8 < Formula
     ENV.append "CFLAGS", "-Wno-implicit-function-declaration"
 
     system "autoreconf --install"
+
     system "./autogen.sh"
     system "./configure", "--prefix=#{prefix}",
                           "--mandir=#{man}",

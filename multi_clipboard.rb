@@ -1,8 +1,8 @@
 class MultiClipboard < Formula
   desc "Clipboard manager for GNU screen."
   homepage "https://github.com/rcmdnk/multi_clipboard/"
-  url "https://github.com/rcmdnk/multi_clipboard/archive/v0.0.18.tar.gz"
-  sha256 "f7a6f962eca63b0300caa4d56f6f9bb7308a138692f9989d26edf1d0357456bd"
+  url "https://github.com/rcmdnk/multi_clipboard/archive/v0.0.19.tar.gz"
+  sha256 "ke740b274e90ee10a2dc1f3e3721c41bb5fa1c18f4e02d628982b5fea5f4cb757"
 
   head "https://github.com/rcmdnk/multi_clipboard.git"
 
