@@ -6,8 +6,6 @@ class RcmdnkSshrc < Formula
 
   head "https://github.com/rcmdnk/sshrc.git"
 
-  bottle :unneeded
-
   def install
     bin.install %w[sshrc moshrc]
   end
