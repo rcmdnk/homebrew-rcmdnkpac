@@ -7,7 +7,7 @@ class GcpTools < Formula
   head "https://github.com/rcmdnk/gcp-tools.git"
 
   def install
-    bin.install Dir[libexec/"bin/*"]
+    bin.install Dir["bin/*"]
     bash_completion.install "etc/bash_completion.d/gcp-tools"
     zsh_completion.install "share/zsh/site-functions/_gcp-tools"
   end
