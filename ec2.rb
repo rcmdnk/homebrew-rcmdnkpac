@@ -6,6 +6,8 @@ class Ec2 < Formula
 
   head "https://github.com/rcmdnk/ec2.git"
 
+  depends_on "awscli"
+
   def install
     bin.install "bin/ec2"
   end
