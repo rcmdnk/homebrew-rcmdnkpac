@@ -1,4 +1,4 @@
-class Screen < Formula
+class Screenutf8 < Formula
   desc "Terminal multiplexer with VT100/ANSI terminal emulation, utf8 patch version"
   homepage "https://www.gnu.org/software/screen"
   license "GPL-3.0-or-later"
@@ -39,8 +39,6 @@ class Screen < Formula
 
   uses_from_macos "libxcrypt"
   uses_from_macos "ncurses"
-
-  option "utf8", "Apply patches for utf8 (default, remained as option for backward compatibility)"
 
   def install
     cd "src" if build.head?
