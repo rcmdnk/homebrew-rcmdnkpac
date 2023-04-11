@@ -3,6 +3,7 @@ class EvernoteMail < Formula
   homepage "https://github.com/rcmdnk/evernote_mail/"
   url "https://github.com/rcmdnk/evernote_mail/archive/v0.0.6.tar.gz"
   sha256 "82311afcab3c19c8761d1213a5e11a6b83a1d70ecb98e135096bf4f01d5054c0"
+  license "MIT"
 
   head "https://github.com/rcmdnk/evernote_mail.git"
 

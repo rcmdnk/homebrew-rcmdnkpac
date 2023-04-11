@@ -3,6 +3,7 @@ class StowReset < Formula
   homepage "https://github.com/rcmdnk/stow_reset/"
   url "https://github.com/rcmdnk/stow_reset/archive/v0.0.3.tar.gz"
   sha256 "362c7dfd766593d69625dcfea90709def0ce7792a18095391b7560dc8c755b2b"
+  license "MIT"
 
   head "https://github.com/rcmdnk/stow_reset.git"
 

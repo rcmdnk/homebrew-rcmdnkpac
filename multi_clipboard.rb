@@ -3,6 +3,7 @@ class MultiClipboard < Formula
   homepage "https://github.com/rcmdnk/multi_clipboard/"
   url "https://github.com/rcmdnk/multi_clipboard/archive/v0.0.20.tar.gz"
   sha256 "3f708e0f8f26ccc8eb2f68487172175f742e6b77dab0864dabe481b680338786"
+  license "MIT"
 
   head "https://github.com/rcmdnk/multi_clipboard.git"
 
