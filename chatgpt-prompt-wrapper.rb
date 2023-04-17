@@ -8,6 +8,7 @@ class ChatgptPromptWrapper < Formula
   license "Apache-2.0"
 
   depends_on "python"
+  depends_on "rust"
 
   resource "aiohttp" do
     url "https://files.pythonhosted.org/packages/c2/fd/1ff4da09ca29d8933fda3f3514980357e25419ce5e0f689041edb8f17dab/aiohttp-3.8.4.tar.gz"
