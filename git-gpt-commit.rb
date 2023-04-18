@@ -7,6 +7,8 @@ class GitGptCommit < Formula
 
   head "https://github.com/rcmdnk/git-gpt-commit.git"
 
+  depends_on "chatgpt-prompt-wrapper"
+
   def install
     bin.install "bin/git-gpt-commit"
   end
