@@ -3,8 +3,8 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/ed/bc/7203850ccb3c526f07ae9222e2436edc693b0ca2537f5b943759bb371728/chatgpt_prompt_wrapper-0.0.9.tar.gz"
-  sha256 "4bdfe654a6a0c7f130ee84376aac9fd0ceb89c4caea2a37ec1b513d671709d35"
+  url "https://files.pythonhosted.org/packages/4a/70/9ea84aac8d126cc899181bbfc59c4241e621bbb738493715b1ae05195e37/chatgpt_prompt_wrapper-0.0.11.tar.gz"
+  sha256 "bf4d18ec50767bd8b216449d2196ebecaf3181dd8943d233795635054f583b20"
   license "Apache-2.0"
 
   depends_on "python"
