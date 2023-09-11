@@ -3,8 +3,8 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/c8/e2/d72ef7044761687992f22b17a7efeee7dc3ebf25954dc838274ae3fbafc5/chatgpt_prompt_wrapper-0.0.13.tar.gz"
-  sha256 "2d71a7273d059c80f23b2bb73cbe9b7b9f35c0bbe546f8b83d23abb65ab843a6"
+  url "https://files.pythonhosted.org/packages/53/49/cd48facf0802ade51c5ca7ddea9a6e12d3e26d688eed0d4014033e0b8ac4/chatgpt_prompt_wrapper-0.0.14.tar.gz"
+  sha256 "735e187898a84496a7232a87147205eebfaa4d2ca4670b894564ff0b27dbda8d"
   license "Apache-2.0"
 
   depends_on "python"
@@ -61,8 +61,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/89/ee/84bbd0161090f0f24e8a2ac175e6b6a936289ee02e9d5da414ce14d3d332/openai-0.27.8.tar.gz"
-    sha256 "2483095c7db1eee274cebac79e315a986c4e55207bb4fa7b82d185b3a2ed9536"
+    url "https://files.pythonhosted.org/packages/e6/d4/67ed9c516b5f480cffd0bcc535a2168647da7578533ab650f0cb6b67ecd4/openai-0.27.10.tar.gz"
+    sha256 "60e09edf7100080283688748c6803b7b3b52d5a55d21890f3815292a0552d83b"
   end
 
   resource "prompt-toolkit" do
