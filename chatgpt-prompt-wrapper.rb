@@ -3,8 +3,8 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/3e/24/ee5cb0e36780efbf689c186cacc0169354d3f8eef8a24bb60c5653c46602/chatgpt_prompt_wrapper-0.0.15.tar.gz"
-  sha256 "34d536f1a293c77f4d41a29f0d22af0b3acbbb293b1dcaef657c535f745a89ad"
+  url "https://files.pythonhosted.org/packages/73/0e/b4aa3f34724252d8cce4eac0780a34d8ae422c2480ad3dc99e105b179ba8/chatgpt_prompt_wrapper-0.0.16.tar.gz"
+  sha256 "8b897a53b7d01f230ada2cc32f920e45c791d69cf1ff05f4d5dab2090f128db7"
   license "Apache-2.0"
 
   depends_on "python"
@@ -41,8 +41,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "conf-finder" do
-    url "https://files.pythonhosted.org/packages/41/65/cd2dce58f55081d541362d7995fa445c59f6872fc319f0ddb4b2e433eb56/conf_finder-0.0.2.tar.gz"
-    sha256 "465a0326363f92e1167cb820834b962bbe1545871b1c352fe436c057e26f621d"
+    url "https://files.pythonhosted.org/packages/a6/dd/a99faef0bd9f4e997044c5913a04d91261d0de37a6a515bfa0b23b0df108/conf_finder-0.1.0.tar.gz"
+    sha256 "93ede283da17d196c669db2410145ef20dd66dcfc2ef4b2f3c00add73e44cbe0"
   end
 
   resource "docstring-inheritance" do
@@ -76,8 +76,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/e6/d4/67ed9c516b5f480cffd0bcc535a2168647da7578533ab650f0cb6b67ecd4/openai-0.27.10.tar.gz"
-    sha256 "60e09edf7100080283688748c6803b7b3b52d5a55d21890f3815292a0552d83b"
+    url "https://files.pythonhosted.org/packages/5e/a8/f8d00a76f3991ff250b6584434ca24c2d275c6f3e97592b44f4ca124c47a/openai-0.28.0.tar.gz"
+    sha256 "417b78c4c2864ba696aedaf1ccff77be1f04a581ab1739f0a56e0aae19e5a794"
   end
 
   resource "prompt-toolkit" do
@@ -101,8 +101,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "tiktoken" do
-    url "https://files.pythonhosted.org/packages/9f/88/77a86f915a81449156375b7538c94105a34bebf00838462c9d3fced490e9/tiktoken-0.4.0.tar.gz"
-    sha256 "59b20a819969735b48161ced9b92f05dc4519c17be4015cfb73b65270a243620"
+    url "https://files.pythonhosted.org/packages/bd/ef/91777d3310589c55da4bf0fafa10fdc8ddefa30aa7dfa67b2fc8825bc1f1/tiktoken-0.5.1.tar.gz"
+    sha256 "27e773564232004f4f810fd1f85236673ec3a56ed7f1206fc9ed8670ebedb97a"
   end
 
   resource "tqdm" do
