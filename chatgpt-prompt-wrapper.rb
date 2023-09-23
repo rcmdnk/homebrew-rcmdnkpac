@@ -3,8 +3,8 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/53/49/cd48facf0802ade51c5ca7ddea9a6e12d3e26d688eed0d4014033e0b8ac4/chatgpt_prompt_wrapper-0.0.14.tar.gz"
-  sha256 "735e187898a84496a7232a87147205eebfaa4d2ca4670b894564ff0b27dbda8d"
+  url "https://files.pythonhosted.org/packages/3e/24/ee5cb0e36780efbf689c186cacc0169354d3f8eef8a24bb60c5653c46602/chatgpt_prompt_wrapper-0.0.15.tar.gz"
+  sha256 "34d536f1a293c77f4d41a29f0d22af0b3acbbb293b1dcaef657c535f745a89ad"
   license "Apache-2.0"
 
   depends_on "python"
@@ -40,6 +40,11 @@ class ChatgptPromptWrapper < Formula
     sha256 "3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"
   end
 
+  resource "conf-finder" do
+    url "https://files.pythonhosted.org/packages/41/65/cd2dce58f55081d541362d7995fa445c59f6872fc319f0ddb4b2e433eb56/conf_finder-0.0.2.tar.gz"
+    sha256 "465a0326363f92e1167cb820834b962bbe1545871b1c352fe436c057e26f621d"
+  end
+
   resource "docstring-inheritance" do
     url "https://files.pythonhosted.org/packages/f8/68/6dafdf5cf4c97552b4c3818d7ee1cd90e6b53b2f56e46c8143f37ab78183/docstring-inheritance-2.0.0.tar.gz"
     sha256 "0ce321ba8d160cb6a6eac08f1305411f5f50cfdf10e91cfeec464143190aaaaf"
@@ -48,6 +53,16 @@ class ChatgptPromptWrapper < Formula
   resource "frozenlist" do
     url "https://files.pythonhosted.org/packages/8c/1f/49c96ccc87127682ba900b092863ef7c20302a2144b3185412a08480ca22/frozenlist-1.4.0.tar.gz"
     sha256 "09163bdf0b2907454042edb19f887c6d33806adc71fbd54afc14908bfdc22251"
+  end
+
+  resource "gitdb" do
+    url "https://files.pythonhosted.org/packages/4b/47/dc98f3d5d48aa815770e31490893b92c5f1cd6c6cf28dd3a8ae0efffac14/gitdb-4.0.10.tar.gz"
+    sha256 "6eb990b69df4e15bad899ea868dc46572c3f75339735663b81de79b06f17eb9a"
+  end
+
+  resource "gitpython" do
+    url "https://files.pythonhosted.org/packages/c6/33/5e633d3a8b3dbec3696415960ed30f6718ed04ef423ce0fbc6512a92fa9a/GitPython-3.1.37.tar.gz"
+    sha256 "f9b9ddc0761c125d5780eab2d64be4873fc6817c2899cbcb34b02344bdc7bc54"
   end
 
   resource "idna" do
@@ -80,6 +95,11 @@ class ChatgptPromptWrapper < Formula
     sha256 "942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"
   end
 
+  resource "smmap" do
+    url "https://files.pythonhosted.org/packages/88/04/b5bf6d21dc4041000ccba7eb17dd3055feb237e7ffc2c20d3fae3af62baa/smmap-5.0.1.tar.gz"
+    sha256 "dceeb6c0028fdb6734471eb07c0cd2aae706ccaecab45965ee83f11c8d3b1f62"
+  end
+
   resource "tiktoken" do
     url "https://files.pythonhosted.org/packages/9f/88/77a86f915a81449156375b7538c94105a34bebf00838462c9d3fced490e9/tiktoken-0.4.0.tar.gz"
     sha256 "59b20a819969735b48161ced9b92f05dc4519c17be4015cfb73b65270a243620"
@@ -91,8 +111,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/31/ab/46bec149bbd71a4467a3063ac22f4486ecd2ceb70ae8c70d5d8e4c2a7946/urllib3-2.0.4.tar.gz"
-    sha256 "8d22f86aae8ef5e410d4f539fde9ce6b2113a001bb4d189e0aed70642d602b11"
+    url "https://files.pythonhosted.org/packages/51/13/62cb4a0af89fdf72db4a0ead8026e724c7f3cbf69706d84a4eff439be853/urllib3-2.0.5.tar.gz"
+    sha256 "13abf37382ea2ce6fb744d4dad67838eec857c9f4f57009891805e0b5e123594"
   end
 
   resource "wcwidth" do
