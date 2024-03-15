@@ -1,8 +1,8 @@
 class Ec2 < Formula
   desc "AWS CLI Wrapper for EC2"
   homepage "https://github.com/rcmdnk/ec2/"
-  url "https://github.com/rcmdnk/ec2/archive/v0.0.50.tar.gz"
-  sha256 "042cc841bd317cd360b91fb9189396ec77b4e1fca83c595f48d1271684bacd06"
+  url "https://github.com/rcmdnk/ec2/archive/v0.0.51.tar.gz"
+  sha256 "0193506a38cd4322d81139e78b92f4611df4d94c40d941f9c93573d547f4c5e8"
 
   head "https://github.com/rcmdnk/ec2.git"
 
