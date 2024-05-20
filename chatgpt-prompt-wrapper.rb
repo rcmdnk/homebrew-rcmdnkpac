@@ -3,8 +3,8 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/c1/e9/45bb5e2db293d95f05ebfb4623eaed97107ee1b4059f923928e601e8b72b/chatgpt_prompt_wrapper-0.0.18.tar.gz"
-  sha256 "c300ac79a1613e500e097732a1a6e4de0f45e3c04ace7b206888e0e6eb5cf261"
+  url "https://files.pythonhosted.org/packages/cb/76/15764faaa232246465e5a046ad608cdb18b058d1e92897863a9b6a5de8bc/chatgpt_prompt_wrapper-0.0.19.tar.gz"
+  sha256 "a147a4462426098ba8e1aa0cb4ae5eaea17d5cfed19f7b976f574f49be1f83e5"
   license "Apache-2.0"
 
   depends_on "python"
@@ -81,8 +81,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "regex" do
-    url "https://files.pythonhosted.org/packages/24/ca/2477acbf4d4abe7b2efaa775d5e96dfa236982671bd01a4172e81278d411/regex-2024.5.10.tar.gz"
-    sha256 "304e7e2418146ae4d0ef0e9ffa28f881f7874b45b4994cc2279b21b6e7ae50c8"
+    url "https://files.pythonhosted.org/packages/7a/db/5ddc89851e9cc003929c3b08b9b88b429459bf9acbf307b4556d51d9e49b/regex-2024.5.15.tar.gz"
+    sha256 "d3ee02d9e5f482cc8309134a91eeaacbdd2261ba111b0fef3748eeb4913e6a2c"
   end
 
   resource "requests" do
