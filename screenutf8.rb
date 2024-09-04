@@ -4,6 +4,7 @@ class Screenutf8 < Formula
   license "GPL-3.0-or-later"
   revision 1
   head "https://git.savannah.gnu.org/git/screen.git", branch: "master"
+  deprecate! date: "2024-09-02", because: "use screen (5.0.0 and later), the patch is no longer needed."
 
   stable do
     url "https://ftp.gnu.org/gnu/screen/screen-4.9.0.tar.gz"
