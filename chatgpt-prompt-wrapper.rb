@@ -7,7 +7,7 @@ class ChatgptPromptWrapper < Formula
   sha256 "5d341f07930ad19644182c7fc2e5022bfa30727e98baf9b8338ded66e4e9092e"
   license "Apache-2.0"
 
-  depends_on "python"
+  depends_on "python@3.12"
   depends_on "rust"
 
   resource "annotated-types" do
