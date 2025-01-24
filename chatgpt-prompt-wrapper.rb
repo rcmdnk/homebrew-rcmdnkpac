@@ -3,7 +3,7 @@ class ChatgptPromptWrapper < Formula
 
   desc "Python CLI implementation for ChatGPT."
   homepage "https://github.com/rcmdnk/chatgpt-prompt-wrapper"
-  url "https://files.pythonhosted.org/packages/6a/c9/a7442ae889fa2b67edc52856caa000c4b61f39480663e11b08892fdd0190/chatgpt_prompt_wrapper-0.2.0.tar.gz"
+  url "https://files.pythonhosted.org/packages/f5/b8/90fdf9d74746d8e370466f3b6d8269bb77a5ea3df0868470b874b3f9543e/chatgpt_prompt_wrapper-0.3.0.tar.gz"
   sha256 "7678041a64e099ea4226c2112b2e64c1662180fb1b2abf89ddd5bded50000d59"
   license "Apache-2.0"
 
@@ -81,13 +81,13 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "openai" do
-    url "https://files.pythonhosted.org/packages/f9/d5/25cf04789c7929b476c4d9ef711f8979091db63d30bfc093828fe4bf5c72/openai-1.59.7.tar.gz"
-    sha256 "043603def78c00befb857df9f0a16ee76a3af5984ba40cb7ee5e2f40db4646bf"
+    url "https://files.pythonhosted.org/packages/d4/2d/9bdf4435d7669b4d027d6d69b4ac82f6be76153d9e90d3155d4224626a29/openai-1.60.0.tar.gz"
+    sha256 "7fa536cd4b644718645b874d2706e36dbbef38b327e42ca0623275da347ee1a9"
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/2d/4f/feb5e137aff82f7c7f3248267b97451da3644f6cdc218edfe549fb354127/prompt_toolkit-3.0.48.tar.gz"
-    sha256 "d6623ab0477a80df74e646bdbc93621143f5caf104206aa29294d53de1a03d90"
+    url "https://files.pythonhosted.org/packages/a1/e1/bd15cb8ffdcfeeb2bdc215de3c3cffca11408d829e4b8416dcfe71ba8854/prompt_toolkit-3.0.50.tar.gz"
+    sha256 "544748f3860a2623ca5cd6d2795e7a14f3d0e1c3c9728359013f79877fc89bab"
   end
 
   resource "pyaml" do
@@ -96,8 +96,8 @@ class ChatgptPromptWrapper < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/6a/c7/ca334c2ef6f2e046b1144fe4bb2a5da8a4c574e7f2ebf7e16b34a6a2fa92/pydantic-2.10.5.tar.gz"
-    sha256 "278b38dbbaec562011d659ee05f63346951b3a248a6f3642e1bc68894ea2b4ff"
+    url "https://files.pythonhosted.org/packages/b7/ae/d5220c5c52b158b1de7ca89fc5edb72f304a70a4c540c84c8844bf4008de/pydantic-2.10.6.tar.gz"
+    sha256 "ca5daa827cce33de7a42be142548b0096bf05a7e7b365aebfa5f8eeec7128236"
   end
 
   resource "pydantic-core" do
