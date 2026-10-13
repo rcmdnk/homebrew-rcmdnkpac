@@ -1,8 +1,8 @@
 class Cs < Formula
   desc "Start claude with session selection"
   homepage "https://github.com/rcmdnk/cs/"
-  url "https://github.com/rcmdnk/cs/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "e9e8139672ddc694b25db4201205306aefd3c67c6784ee262620203611dada7b"
+  url "https://github.com/rcmdnk/cs/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "272db4aa8cbbf419425d99d3a45bdfb0bbfad6b8a7425215952a5c9c6adbd63e"
   license "Apache-2.0"
 
   head "https://github.com/rcmdnk/cs.git"
