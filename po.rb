@@ -2,7 +2,7 @@ class Po < Formula
   desc "Parallel operation by using Tmux."
   homepage "https://github.com/rcmdnk/ParallelOperation/"
   url "https://github.com/rcmdnk/ParallelOperation/archive/v0.0.1.tar.gz"
-  sha256 "4b35bc553995bdd6af7f975b735dd9bf18267ed45126a7842300f8c21d6836dd"
+  sha256 "9d3e814104caa66c472cec4a9d21a7710f318cbe2cce22ef65d55bb1681f004a"
   license "MIT"
 
   head "https://github.com/rcmdnk/ParallelOperation.git"
