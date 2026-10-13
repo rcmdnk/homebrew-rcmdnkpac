@@ -1,0 +1,101 @@
+name: Test formulae
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-formulae-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  discover:
+    name: Discover formulae
+    runs-on: ubuntu-latest
+    outputs:
+      formulae: ${{ steps.formulae.outputs.formulae }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Generate formula matrix
+        id: formulae
+        shell: python
+        run: |
+          import json
+          import os
+          from pathlib import Path
+
+          files = list(Path(".").glob("*.rb"))
+          files.extend(Path("Formula").rglob("*.rb"))
+          formulae = sorted({file.stem for file in files})
+          if not formulae:
+              raise SystemExit("No formulae found")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              output.write(f"formulae={json.dumps(formulae)}\n")
+
+  test:
+    name: Test ${{ matrix.formula }}
+    needs: discover
+    runs-on: macos-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        formula: ${{ fromJSON(needs.discover.outputs.formulae) }}
+    env:
+      HOMEBREW_NO_ANALYTICS: "1"
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+      HOMEBREW_GITHUB_API_TOKEN: ${{ github.token }}
+      FORMULA: rcmdnk/rcmdnkpac/${{ matrix.formula }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Set up the checked-out tap
+        run: |
+          brew update
+          tap_path="$(brew --repository)/Library/Taps/rcmdnk/homebrew-rcmdnkpac"
+          mkdir -p "$(dirname "$tap_path")"
+          ln -s "$GITHUB_WORKSPACE" "$tap_path"
+          brew trust rcmdnk/rcmdnkpac
+      - name: Read formula metadata
+        id: metadata
+        run: |
+          brew ruby -r formula -e '
+            formula = Formulary.factory(ARGV.fetch(0))
+            puts "head=#{formula.stable.nil?}"
+            puts "test=#{formula.test_defined?}"
+          ' -- "$FORMULA" >> "$GITHUB_OUTPUT"
+      - name: Install formula from source
+        env:
+          HEAD_ONLY: ${{ steps.metadata.outputs.head }}
+        run: |
+          args=(--build-from-source --verbose)
+          if [[ "$HEAD_ONLY" == "true" ]]; then
+            args+=(--HEAD)
+          fi
+          brew install "${args[@]}" "$FORMULA"
+      - name: Run formula test
+        if: steps.metadata.outputs.test == 'true'
+        env:
+          HEAD_ONLY: ${{ steps.metadata.outputs.head }}
+        run: |
+          args=(--verbose)
+          if [[ "$HEAD_ONLY" == "true" ]]; then
+            args+=(--HEAD)
+          fi
+          brew test "${args[@]}" "$FORMULA"
+      - name: Report formula without a test block
+        if: steps.metadata.outputs.test != 'true'
+        run: |
+          echo "::notice::$FORMULA has no test block; installation was verified."
+          echo "$FORMULA: installation verified; no test block defined." >> "$GITHUB_STEP_SUMMARY"

@@ -25,6 +25,16 @@ With [brew-file](https://github.com/rcmdnk/homebrew-file), add to your Brewfile:
 
 or use `tapall 'rcmdnk/rcmdnkpac'` to install everything in this tap.
 
+## CI
+
+The `Test formulae` GitHub Actions workflow runs on every push and pull request,
+and can also be started manually. It discovers all `.rb` formulae in the repository
+root and `Formula/`, then installs each from source in a separate macOS job.
+HEAD-only formulae are installed with `--HEAD`. Formulae with a `test do` block
+also run `brew test`; those without one report installation-only validation.
+Deprecated formulae are included. Reference files such as `linkchecker.rb.notuse`
+are excluded.
+
 ## Formulae
 
 ### Shell functions
