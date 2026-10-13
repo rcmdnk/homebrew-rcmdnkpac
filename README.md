@@ -33,8 +33,7 @@ root and `Formula/`, checks that each has a README list entry with a description
 then installs each from source in a separate macOS job.
 HEAD-only formulae are installed with `--HEAD`. Formulae with a `test do` block
 also run `brew test`; those without one report installation-only validation.
-Deprecated formulae are included. Reference files such as `linkchecker.rb.notuse`
-are excluded.
+Deprecated formulae are included; files without the `.rb` extension are ignored.
 
 Run the README coverage check locally with:
 
@@ -82,7 +81,7 @@ These are installed with their own virtualenv.
 - [cocoro](https://pypi.org/project/cocoro/): Tools for COCORO API (SHARP products)
 - [gmail_filter_manager](https://github.com/rcmdnk/gmail_filter_manager): Gmail filter manager using YAML format
 
-### Deprecated
+### Removed
 
-- [screenutf8](https://www.gnu.org/software/screen): GNU screen 4.9 with UTF-8 patches. Deprecated since 2024-09-02: screen 5.0 and later in homebrew-core does not need these patches
-- linkchecker (`linkchecker.rb.notuse`): Not installable, kept for reference only. It conflicted with Python's site-packages installed by `brew install python`
+- screenutf8: GNU screen 4.9 with UTF-8 patches. Deprecated since 2024-09-02 and removed in 2026-10: screen 5.0 and later in homebrew-core does not need these patches
+- linkchecker: Former reference-only file (`linkchecker.rb.notuse`), removed in 2026-10. It conflicted with Python's site-packages installed by `brew install python`
