@@ -22,6 +22,8 @@ jobs:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
+      - name: Check README formula coverage
+        run: python3 -m unittest discover -s tests -v
       - name: Generate formula matrix
         id: formulae
         shell: python
